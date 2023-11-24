@@ -54,22 +54,32 @@ class ActivityTask5 : AppCompatActivity() {
                 currentSongIndex--
             }
             updateUI()
+            val isPlaying = mediaPlayer.isPlaying
             mediaPlayer.stop()
             mediaPlayer.release()
             mediaPlayer = MediaPlayer.create(this, songs[currentSongIndex].uri)
-            mediaPlayer.start()
+            if(isPlaying) {
+                mediaPlayer.start()
+            } else {
+
+            }
         }
         binding.nextSongButton.setOnClickListener {
-            if(currentSongIndex > songs.size - 1) {
+            if(currentSongIndex >= songs.size - 1) {
                 currentSongIndex = 0
             } else {
                 currentSongIndex++
             }
             updateUI()
+            val isPlaying = mediaPlayer.isPlaying
             mediaPlayer.stop()
             mediaPlayer.release()
             mediaPlayer = MediaPlayer.create(this, songs[currentSongIndex].uri)
-            mediaPlayer.start()
+            if(isPlaying) {
+                mediaPlayer.start()
+            } else {
+
+            }
         }
     }
 
