@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lab9" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        
+        <item name="houseViewStyle">@style/DefaultStyleHouseView</item>
+    </style>
+
+    <style name="Theme.Lab9" parent="Base.Theme.Lab9" />
+
+    <style name="DefaultStyleHouseView" >
+        <item name="bodyColor">#f49918</item>
+        <item name="backgroundTopColor">#00b8ff</item>
+        <item name="backgroundBottomColor">#28ec28</item>
+        <item name="chimneyColor">#f42618</item>
+        <item name="roofColor">#a74d0a</item>
+    </style>
+
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HouseView">
+        
+        <attr name="backgroundTopColor" format="color"/>
+        <attr name="backgroundBottomColor" format="color"/>
+        <attr name="roofColor" format="color"/>
+        <attr name="chimneyColor" format="color"/>
+        <attr name="bodyColor" format="color"/>
+
+    </declare-styleable>
+    
+    <attr name="houseViewStyle" format="reference"/>
+    
+</resources>
